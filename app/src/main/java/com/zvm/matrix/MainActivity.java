@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.button).setOnClickListener(v -> addToPath(0));
-        findViewById(R.id.button2).setOnClickListener(v -> addToPath(1));
-        findViewById(R.id.button3).setOnClickListener(v -> addToPath(2));
+        findViewById(R.id.button2).setOnClickListener(v -> addToPath(2));
+        findViewById(R.id.button3).setOnClickListener(v -> addToPath(1));
         findViewById(R.id.button4).setOnClickListener(v -> addToPath(3));
 
         tvPath = findViewById(R.id.tvPath);

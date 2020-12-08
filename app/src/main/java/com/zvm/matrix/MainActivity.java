@@ -68,14 +68,17 @@ public class MainActivity extends AppCompatActivity {
         Map<String, Integer[]> map = matrix.getRows();
 
         for (Map.Entry<String, Integer[]> entry : map.entrySet()) {
-            builder.append(entry.getKey()).append(" ").append(Arrays.toString(entry.getValue())
-                    .replaceAll("\\[", "(")
-                    .replaceAll("]", ")"))
-            .append("\n");
+            builder.append(entry.getKey())
+                    .append(" ")
+                    .append(Arrays.toString(entry.getValue()).replaceAll("\\[", "(").replaceAll("]", ")"))
+                    .append("\n");
 
             Integer[] ints = entry.getValue();
             int x = (ints[0] + ints[3] + ints[7] + ints [11])/4;
-            builder2.append(entry.getKey()).append(": через рік ").append(x);
+            builder2.append(entry.getKey())
+                    .append(": через рік ")
+                    .append(x)
+                    .append("\n");
         }
 
         tvData.setText(builder.toString());

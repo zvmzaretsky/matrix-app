@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void display(Matrix matrix) {
 
+        path = "";
+        counter = 0;
         findViewById(R.id.button).setClickable(true);
         findViewById(R.id.button2).setClickable(true);
         findViewById(R.id.button3).setClickable(true);
